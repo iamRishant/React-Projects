@@ -62,7 +62,7 @@ function App() {
   const [color,setColor]=useState("")
 
   return (
-    <div className={`h-screen w-full ${color} relative`}>
+    <div className={`h-screen w-full ${color} duration-300 relative`}>
     <div className="flex gap-5 px-[10vw] absolute bottom-5 w-full ">
 
       {

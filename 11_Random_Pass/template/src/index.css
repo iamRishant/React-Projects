@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+    background-color: rgb(249 115 22); /* your desired color */
+    color: white; /* text color inside selection */
+  }
+  

@@ -4,7 +4,7 @@ import config from "../config/config";
 import { Client, Account, ID } from "appwrite";
 
 
-class AuthService{
+export class AuthService{
     client=new Client();
     account;
     // we are not defining above account kyuki hm chahte hai jab object create ho aur constructor call ho then we will define it

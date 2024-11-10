@@ -4,13 +4,14 @@ import React, { createContext, useContext, useState } from 'react'
 export const UserContext=createContext();
 const Context = (props) => {
 
-    const [user,setUser]=useState([
-        {id:0,name:"Rishant",city:"Patna"}
-    ]);
+    const localData=localStorage.length>0 && JSON.parse(localStorage.getItem("work"));
+
+    const [todo,setTodo]=useState(localData || []);
+
     
 
   return (
-    <UserContext.Provider value={{user,setUser}}>
+    <UserContext.Provider value={{todo,setTodo}}>
         {props.children}
     </UserContext.Provider>
   )
